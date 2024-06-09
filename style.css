@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes run-text {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 8em;
+  font-weight: 700;
+}
+
+h2 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  padding-left: 70px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+div {
+  position: relative;
+  padding-left: 180px;
+}
+
+a:hover img {   
+  transform: scale(1.5); 
+}
+
+ul {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  padding-left: 100px;
+}
+
+ul ul {
+  font-size: 1em;
+}
+
+.header {
+  display: flex;
+  min-height: 100vh;
+  padding: 8px 50px;
+  background-color: #02f;
+  background-image: url("img/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__title {
+  transform: translateX(0);
+  animation-name: header_anim;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-transform: uppercase;
+  color: #fff;
+  align-self: center;
+}
+
+.article {
+  position: relative;
+  min-height: 100vh;
+  padding: 8px 50px;
+}
+
+.article_first,
+.article_second {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.article_second {
+  margin-bottom: 60px;
+}
+
+.running-text {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(109, 71, 122, 0.5);
+  margin-bottom: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: run-text 30s linear infinite;
+}
+
+#social-links img {
+  margin-right: 25px;
+}
