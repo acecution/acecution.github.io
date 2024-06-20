@@ -6,13 +6,20 @@
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
-      <header class = "header">
+      <header class = "header" id="home">
+         <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About & Contacts</a></li>
+                <li><a href ="comic.html">Comic</a></li>
+            </ul>
+        </nav>
          <h1 class="header__title">Anastasia Varfolomeeva</h1>
       </header>
       <main>
-         <article class = "article_first">
+         <article class = "article_first" id="about">
             <h2>About Me</h2>
-            <ul>
+            <ul class ="list__about">
                <li>18 y.o.</li>
                <li>RU/ENG</li>
                <li>Innopolis University B23-ISE-05 student</li>
@@ -27,7 +34,7 @@
                <li>Studying Front-end Web Development at this course ;)</li>
              </ul>             
          </article>
-         <article class = "article_second" id="social-links">
+         <article class = "article_second" id="contacts">
             <h2>Contact Me</h2>
             <div>
                <a id="tg-link" href="https://t.me/acecution"><img src="img/tg.png" width="50" height="50" alt="Telegram"></a>
@@ -36,6 +43,7 @@
             </div>
          </article>
          <div class="running-text">Thanks for visiting my website, see you next time!</div>
+
       </main>
    </body>
 </html>

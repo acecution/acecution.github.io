@@ -55,18 +55,47 @@ ul {
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  padding-left: 100px;
 }
 
 ul ul {
   font-size: 1em;
 }
 
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #F4F6F7;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 36px;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background:rgba(109, 71, 122, 0.5);
+  box-shadow: 1px 1px #000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
 .header {
   display: flex;
   min-height: 100vh;
   padding: 8px 50px;
-  background-color: #02f;
   background-image: url("img/1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,6 +138,11 @@ ul ul {
   animation: run-text 30s linear infinite;
 }
 
-#social-links img {
+.list__about {
+  padding-left: 120px;
+}
+
+#contacts img {
   margin-right: 25px;
 }
+
