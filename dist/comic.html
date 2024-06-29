@@ -6,26 +6,21 @@
     <style>
         @import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
-
-
         .comic-placement {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
-
         .hint {
             font-family: 'Open Sans', sans-serif;
             color: #F4F6F7;
             text-align: center;
             margin-top: 10px;
         }
-
         nav {
             padding: 10px 62px;
         }
-
         nav ul li a{
             color: #F4F6F7;
             font-family: "Montserrat", sans-serif;
@@ -35,7 +30,6 @@
             text-align: center;
             position: relative;
         }
-
         nav ul li a::after{
             content: '';
             width: 0;
@@ -46,11 +40,9 @@
             left: 0;
             bottom: -6px;
         }
-
         nav ul li a:hover::after{
             width: 100%;
         }
-
         #comic-container {
             display: flex;
             flex-direction: column;
@@ -60,17 +52,16 @@
             padding-bottom: 10px;
             border: 10px outset lightblue;
         }
-
         #comic-title, #comic-date, #comic-ago {
             font-family: 'Open Sans', sans-serif;
             font-size: 1.2em;
         }
-
         #comic-title {
             font-weight: bold;
         }
 
     </style>
+  <script type="module" crossorigin src="/assets/comic-BGFLDNLO.js"></script>
 </head>
 <body>
     <nav><ul><li><a href="index.html">Go back</a></li></ul></nav>
@@ -86,7 +77,6 @@
 
     <div class="hint">Hint: Try refreshing the page ;)</div>
 
-    <script type="module" src="src/comic.ts"></script>
 
 </body>
 </html>
