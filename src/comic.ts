@@ -49,8 +49,8 @@ const getData = async () => {
 
 function getRandomImageUrl() : string {
     const imageUrls : string[] = [
-        'img/3.jpg',
-        'img/2.jpg'
+        'public/img/3.jpg',
+        'public/img/2.jpg'
     ];
     return imageUrls[Math.floor(Math.random() * imageUrls.length)];
 }
