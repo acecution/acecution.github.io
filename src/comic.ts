@@ -11,6 +11,9 @@ interface ComicApiResponse {
     id: number;
 }
 
+import img2 from "./assets/2.jpg"
+import img3 from "./assets/3.jpg"
+
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
@@ -49,8 +52,8 @@ const getData = async () => {
 
 function getRandomImageUrl() : string {
     const imageUrls : string[] = [
-        'public/img/3.jpg',
-        'public/img/2.jpg'
+        img2,
+        img3,
     ];
     return imageUrls[Math.floor(Math.random() * imageUrls.length)];
 }
