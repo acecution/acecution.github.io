@@ -1,16 +1,12 @@
 import { defineConfig } from "vite";
+import { sveltekit } from "@sveltejs/kit/vite";
 
 export default defineConfig({
   build: {
     minify: true,
-    rollupOptions: {
-      input: {
-        main: "index.html",
-        comic: "comic.html",
-      },
-    },
   },
   server: {
     cors: true
-  }
+  },
+  plugins: [sveltekit()],
 });
