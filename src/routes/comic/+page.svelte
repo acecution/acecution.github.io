@@ -24,12 +24,12 @@
     @import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
     @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
 
-    .hint {
+    /* .hint {
         font-family: 'Open Sans', sans-serif;
         color: #F4F6F7;
         text-align: center;
         margin-top: 10px;
-    }
+    } */
 
     nav {
         padding: 20px 70px;
