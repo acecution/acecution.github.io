@@ -1,23 +1,24 @@
 <script lang='ts'>
     import Comic from "../../Comic.svelte";
-    import img2 from "../../assets/2.jpg";
+    // import img2 from "../../assets/2.jpg";
     import img3 from "../../assets/3.jpg";
-    function getRandomImageUrl() : string {
-        const imageUrls : string[] = [
-            img2,
-            img3,
-        ];
-        return imageUrls[Math.floor(Math.random() * imageUrls.length)];
-    }
+    // function getRandomImageUrl() : string {
+    //     const imageUrls : string[] = [
+    //         img2,
+    //         img3,
+    //     ];
+    //     return imageUrls[Math.floor(Math.random() * imageUrls.length)];
+    // }
+    // const img = getRandomImageUrl()
 
-    document.body.style.backgroundImage = `url(${getRandomImageUrl()})`;
 </script>
 
-<nav><ul><li><a href="/">Go back</a></li></ul></nav>
+<body style="background-image: url({img3})">
+    <nav><ul><li><a href="/">Go back</a></li></ul></nav>
+    <Comic></Comic>
+</body>
 
-<Comic></Comic>
-
-<div class="hint">Hint: Try refreshing the page ;)</div>
+<!-- <div class="hint">Hint: Try refreshing the page ;)</div> -->
 
 <style>
     @import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
