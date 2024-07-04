@@ -2,8 +2,7 @@
     import type { NavItem } from './types';
   
     export let navItems: NavItem[] = [
-      { href: '/', title: 'Home' },
-      { href: '#about', title: 'About & Contacts' },
+      { href: '/', title: 'About' },
       { href: 'comic', title: 'Comic' },
     ];
 </script>
@@ -59,10 +58,10 @@
     
     .header {
     display: flex;
-    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-color: transparent; 
     }
     
 </style>

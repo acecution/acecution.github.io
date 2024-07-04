@@ -6,7 +6,7 @@ export default defineConfig({
     minify: true,
   },
   server: {
-    cors: true
+    cors: true,
   },
   plugins: [sveltekit()],
 });

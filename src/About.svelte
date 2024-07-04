@@ -7,35 +7,44 @@
       '18 y.o.',
       'RU/ENG',
       'Innopolis University B23-ISE-05 student',
-      {
-        title: 'Trusted Technologies',
-        items: ['C/C++', 'Java', 'Python', 'Haskell'],
-      },
       'Studying Front-end Web Development at this course ;)',
     ],
   };
+
+  export let trustedTechnologies: AboutSection = {
+    title: '',
+    description: [
+      'C/C++', 
+      'Java', 
+      'Python', 
+      'Haskell',
+    ]
+  };
 </script>
 
+<div class="container">
+  <div class="about-block">
+    <h2>{aboutSection.title}</h2>
+    <div class="about-content"> 
+      <ul>
+        {#each aboutSection.description as item}
+          <li>{item}</li>
+        {/each}
+      </ul>
+    </div>
+  </div>
 
-<article class="article_first" id="about">
-  <h2>{aboutSection.title}</h2>
-  <ul class="list__about">
-    {#each aboutSection.description as item}
-      {#if typeof item === 'object'}
-        <li>
-          {item.title}
-          <ul>
-            {#each item.items as tech}
-              <li>{tech}</li>
-            {/each}
-          </ul>
-        </li>
-      {:else}
-        <li>{item}</li>
-      {/if}
-    {/each}
-  </ul>
-</article>
+  <div class="tech-block">
+    <h2 class="tech-title">{trustedTechnologies.title}</h2>
+    <div class="about-content"> 
+      <ul>
+        {#each trustedTechnologies.description as item}
+          <li>{item}</li>
+        {/each}
+      </ul>
+    </div>
+  </div>
+</div>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
@@ -44,10 +53,10 @@
 h2 {
 position: relative;
 font-family: "Montserrat", sans-serif;
-font-size: 5em;
+font-size: 2em;
 font-weight: 700;
-padding-left: 70px;
 margin-bottom: 0px;
+margin-top: 0px;
 color: #333;
 }
 
@@ -55,10 +64,9 @@ ul {
 position: relative;
 font-family: 'Open Sans', sans-serif;
 font-size: 1.2em;
-}
-
-ul ul {
-font-size: 1em;
+margin-top: 0px;
+margin-bottom: 0px;
+left: -15px;
 }
 
 nav ul li{
@@ -66,21 +74,35 @@ display: inline-block;
 list-style: none;
 }
 
-.article_first {
+.container {
+  display: flex;
+  gap: 30px;
+  margin-left: 200px;
+}
+
+.about-block {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-/* 
+  background-color: white;
+  width: 300px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  border-radius: 30px; 
+  box-shadow: 0 0 10px black;
 }
 
-.list__about {
-padding-left: 120px;
-/* border: 1px solid black;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  border-radius: 30px;  */
+.tech-block {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: white;
+  border-radius: 30px; 
+  box-shadow: 0 0 10px black;
+  width: 100px;
+  padding: 20px;
 }
+
 </style>

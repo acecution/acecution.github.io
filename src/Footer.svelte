@@ -55,14 +55,13 @@
     }
 
     .contact-list {
-      background-color: white;
+      background-color: transparent; 
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      margin-top: 60px;
-      padding-bottom: 15px;
-
+      padding-top: 40px;
+      padding-bottom: 50px;
     }
   
     .contact-item {
@@ -73,10 +72,11 @@
       border-radius: 5px;
       text-decoration: none;
       color: #333;
+      background-color: #f0f0f0;
     }
   
     .contact-item:hover {
-      background-color: #f0f0f0;
+      opacity: 0.8;
     }
   
     .contact-label {

@@ -65,6 +65,7 @@
         align-items: center;
         flex-direction: column;
         padding-bottom: 100px;
+        padding-top: 100px;
     }
 
     .comic-container {

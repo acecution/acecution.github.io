@@ -1,62 +1,73 @@
 <script lang="ts">
     import About from "../About.svelte";
-    import Footer from "../Footer.svelte";
-    import Header from "../Header.svelte";
-    import img1 from "../assets/1.jpg";
+    import pfp from "../assets/pfp.jpg";
 
 </script>
 
-<body>
-<header class = "header" style="background-image: url({img1})" id="home">
-    <Header></Header>
-    <h1 class="header__title">Anastasia Varfolomeeva</h1>
-</header>
-<main>
-    <About></About>
-    <Footer></Footer>
-</main>
-</body>
+<div class="container">
+  <main>
+      <About></About>
+  </main>
+  <div class = 'header'>
+    <div class="header-content">
+      <img src="{pfp}" alt="Anastasia Varfolomeeva" class="profile-picture"/> 
+      <h1>Anastasia Varfolomeeva</h1>
+    </div>
+</div>
+</div>
 
 <style>
-    @keyframes header_anim {
-        from {
-            transform: translateX(-120%);
+    :global(body) {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            background-image: url("../assets/3.jpg");
         }
-        to {
-            transform: translateX(0);
-        }
-    }
 
     h1 {
-        position: absolute;
-        bottom: 0;
-        font-family: "Open Sans", sans-serif;
-        font-size: 8em;
-        font-weight: 700;
-    }
-
-    :global(body) {
-        background-color: white;
-        padding: 0;
-        margin: 0;
-    }
-
-    .header__title {
-        transform: translateX(0);
-        animation-name: header_anim;
-        animation-duration: 1.5s;
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         text-transform: uppercase;
         color: #fff;
-        align-self: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 4em;
+        line-height: 1.2;
+        margin-left: 30px;
+    }
+
+    main {
+        flex: 1;
     }
 
     .header {
         display: flex;
-        min-height: 100vh;
+        min-height: 30vh;
         padding: 8px 50px;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .container {
+        display: flex;
+        gap: 13em;
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 170px;
+        height: auto; 
+        border-radius: 50%;
+        border: 3px solid #ff69b4; 
+        box-shadow: 0 0 10px #ff69b4;
+    }
+
 </style>
+

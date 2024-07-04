@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "extends": "./.svelte-kit/tsconfig.json",
+  "extends": "./.svelte-kit/tsconfig.json"
 }
