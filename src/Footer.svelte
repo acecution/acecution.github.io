@@ -69,10 +69,11 @@
       align-items: center;
       padding: 10px;
       border: 1px solid #ddd;
-      border-radius: 5px;
+      border-radius: 30px;
       text-decoration: none;
       color: #333;
       background-color: #f0f0f0;
+      width: 150px;
     }
   
     .contact-item:hover {
