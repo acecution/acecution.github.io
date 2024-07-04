@@ -45,7 +45,8 @@
     content: '';
     width: 0;
     height: 3px;
-    background:rgba(109, 71, 122, 0.5);
+    /* background:rgba(109, 71, 122, 0.5); */
+    background: gray;
     box-shadow: 1px 1px #000;
     position: absolute;
     left: 0;
