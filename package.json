@@ -19,7 +19,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "lint": "prettier --check . && eslint .",
-    "cloudflare": "npm install --legacy-peer-deps && npm run lint && rm -rf build && vite build"
+    "cloudflare": "npm run lint && npm run build"
   },
   "devDependencies": {
     "eslint": "^9.6.0",
