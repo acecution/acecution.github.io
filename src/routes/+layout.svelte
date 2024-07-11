@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
-  import Favicon from '../assets/pfp.jpg'; 
+  import Favicon from '../assets/logo.png'; 
   import { page } from "$app/stores";
 
   let defaultTitle = 'Home';
