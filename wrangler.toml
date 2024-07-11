@@ -1,19 +1,10 @@
-# Top-level configuration
-name = "my-worker"
-main = "src/index.js"
-compatibility_date = "2022-07-12"
+name = "<your-service-name>"
+account_id = "90319eafaf3502b6960e2275ffcf3dff"
 
-workers_dev = false
-route = { pattern = "example.org/*", zone_name = "example.org" }
+main = "./.cloudflare/worker.js"
+site.bucket = "./.cloudflare/public"
 
-kv_namespaces = [
-  { binding = "<MY_NAMESPACE>", id = "<KV_ID>" }
-]
+build.command = "npm run build"
 
-[env.staging]
-name = "my-worker-staging"
-route = { pattern = "staging.example.org/*", zone_name = "example.org" }
-
-kv_namespaces = [
-  { binding = "<MY_NAMESPACE>", id = "<STAGING_KV_ID>" }
-]
+compatibility_date = "2024-07-11"
+workers_dev = true
