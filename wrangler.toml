@@ -1,4 +1,4 @@
-name = "My Portfolio Website"
+name = "my_portfolio_website"
 account_id = "90319eafaf3502b6960e2275ffcf3dff"
 
 main = "./.cloudflare/worker.js"
