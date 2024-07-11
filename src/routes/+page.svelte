@@ -2,7 +2,13 @@
     import About from "../About.svelte";
     import pfp from "../assets/pfp.jpg";
 
+    let title = 'Home';
+
 </script>
+
+<svelte:head>
+    <title>{title}</title> 
+</svelte:head>
 
 <div class="container">
   <main>

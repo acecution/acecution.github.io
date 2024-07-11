@@ -1,14 +1,14 @@
+export interface ComicApiResponse {
+  id: number;
+}
+
 export interface ComicData {
   img: string;
-  day: number;
+  alt: string;
   safe_title: string;
   year: number;
   month: number;
-  alt: string;
-}
-
-export interface ComicApiResponse {
-  id: number;
+  day: number;
 }
 
 export interface NavItem {
